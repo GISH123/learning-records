@@ -1,4 +1,4 @@
-我的筆記：
+我的筆記：  
 evolving process :  
 RNN -> Seq2Seq -> With Attention -> Transformer -> BERT  
 RNN : https://www.youtube.com/watch?v=UNmqTiOnRfg  
