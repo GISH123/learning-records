@@ -3,7 +3,8 @@ evolving process :
 RNN -> Seq2Seq -> With Attention -> Transformer -> BERT
 RNN : https://www.youtube.com/watch?v=UNmqTiOnRfg  
 
-Seq2Seq with Attention : https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention
+## Seq2Seq with Attention : 
+https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention
 
 (1)Seq2Seq  
 Encoder & Decoder  
@@ -18,8 +19,14 @@ then feed Context Vector into Decoder  (the Decoder works the same as before, an
 
 
 
+### Seq2Seq with Attention vs Transformer:  
+Transformer no longer uses RNN, but uses Self Attention(Both are alike, solves problem mainly for context, need to know which word are relate to other words)  
+Self Attention is better at figuring out the relative words  
+Because RNN has a shorter memory  (vs ELMo, LSTM Based)  
 
-Transformer : https://jalammar.github.io/illustrated-transformer/  
+
+## Transformer : 
+https://jalammar.github.io/illustrated-transformer/  
 
 Input : word embeddings  
 6 Encoder + 6 Decoder  
@@ -40,3 +47,11 @@ Positional Encoding(Adding a vectors before embeddings enter the encoder)
 Encoder-Decoder Attention( on Decoder):  
 Takes Input from top Encoder outputs(K and V vector, dont know what?)   
 helps the decoder focus on appropriate places in the input sequence  
+
+## BERT :   
+from ELMo(LSTM, bi-directional) to BERT(Transformer with masks)  
+  
+Could we build a transformer-based model whose language model looks both forward and backwards?(in the technical jargon – “is conditioned on both left and right context”)?  
+BERT uses masks to solve the problem  
+
+
