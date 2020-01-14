@@ -48,7 +48,7 @@ Encoder-Decoder Attention( on Decoder):
 Takes Input from top Encoder outputs(K and V vector, dont know what?)   
 helps the decoder focus on appropriate places in the input sequence  
 
-## BERT :   
+## BERT(need further investigation) :   
 from ELMo(LSTM, bi-directional) to BERT(Transformer with masks)  
   
 Could we build a transformer-based model whose language model looks both forward and backwards?(in the technical jargon – “is conditioned on both left and right context”)?  
